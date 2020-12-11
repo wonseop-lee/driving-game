@@ -1,7 +1,9 @@
-document.addEventListener('keydown', function(e){
-  console.log('keydown', e.key);
-});
-
 var car = {
-  direction: 'right'
+  direction: 'ArrowRight'
 };
+
+function updateDir(event) {
+  car.direction = event.key;
+}
+
+document.addEventListener('keydown', updateDir);
