@@ -10,8 +10,8 @@ function updateDir(event) {
       event.key === 'ArrowLeft' ||
       event.key === 'ArrowUp') {
     car.direction = event.key;
+    $img.setAttribute('class', car.direction);
   }
-  $img.setAttribute('class', car.direction);
 }
 
 document.addEventListener('keydown', updateDir);
