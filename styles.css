@@ -4,4 +4,21 @@ body {
 
 img {
   width: 150px;
+  transition: 0.1s;
+}
+
+.ArrowRight {
+  transform: rotate(0deg);
+}
+
+.ArrowDown {
+  transform: rotate(90deg);
+}
+
+.ArrowLeft {
+  transform: rotate(180deg);
+}
+
+.ArrowUp {
+  transform: rotate(270deg);
 }

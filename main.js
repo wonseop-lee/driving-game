@@ -1,9 +1,17 @@
+var $img = document.querySelector('img');
+
 var car = {
-  direction: 'ArrowRight'
+  direction: ''
 };
 
 function updateDir(event) {
-  car.direction = event.key;
+  if (event.key === 'ArrowRight' ||
+      event.key === 'ArrowDown' ||
+      event.key === 'ArrowLeft' ||
+      event.key === 'ArrowUp') {
+    car.direction = event.key;
+  }
+  $img.setAttribute('class', car.direction);
 }
 
 document.addEventListener('keydown', updateDir);
